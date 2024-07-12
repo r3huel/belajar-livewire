@@ -7,12 +7,14 @@
     <title>Task List</title>
 
     @livewireStyles
+    @vite('resources/css/app.css')
 </head>
-<body>
-    <div class="container">
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto mt-8">
         @yield('content')
     </div>
 
     @livewireScripts
+    @vite('resources/js/app.js')
 </body>
 </html>
